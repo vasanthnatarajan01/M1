@@ -93,22 +93,26 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
+#include <stdio.h>
+		
+		int main() {
+		    int n1,d1,n2,d2;
+		    float fra1,fra2,min;
+	
+		    scanf("%d %d", &n1,&d1);
+		
+		    scanf("%d %d", &n2,&d2);
+		
+		    fra1 = (float)n1/d1;
+		    fra2 = (float)n2/d2;
+		
+		    min = (fra1 < fra2) ? fra1 : fra2;
+		
+		    printf("The smaller fraction in decimal form is: %.2f\n", min);
+		
+		    return 0;
+		}
 
-	#include <stdio.h>
-	int main()
-	{
-	    int a,b;
-	    scanf("%d%d",&a,&b);
-	    if (a<b)
-	    {
-	        printf("Minimum between %d and %d is %d",a,b,a);
-	    }
-	    else
-	    {
-	        printf("Minimum between %d and %d is %d",a,b,b);
-	    }
-	    return 0;
-	}
 
 ## OUTPUT:
 
